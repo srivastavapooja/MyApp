@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_cart"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        />
+
+</menu>

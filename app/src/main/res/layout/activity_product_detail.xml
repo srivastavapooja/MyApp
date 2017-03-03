@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pooja.myapp.ProductDetailActivity">
+    <include
+        layout="@layout/action_bar_child_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/action_bar_theme"
+        android:id="@+id/display_imp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/product_img"
+            android:src="@drawable/ic_image_placeholder"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_detail"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:hint="Product detail"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_price"
+                android:hint="Product price"
+                android:layout_weight="0.3"
+                android:gravity="bottom"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_rating"
+                android:hint="Product price"
+                android:layout_weight="0.3"
+                android:gravity="bottom"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/detail_page_btns"
+        android:layout_below="@+id/display_imp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wishlist_btn"
+            android:text="Add to Wishlist"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorButtonText"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_btn"
+            android:text="Add to Cart"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorButtonText"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:onClick="addToCart"/>
+
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_below="@+id/detail_page_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:id="@+id/tab"/>
+
+    <android.support.v4.view.ViewPager
+            android:layout_below="@+id/tab"
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>

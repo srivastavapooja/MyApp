@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pooja.myapp.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_option"
+        android:text="Sign In"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_option"
+        android:text="Account Info"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/signin_option"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wishlist_option"
+        android:text="My Wishlist"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/account_option"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderhistory"
+        android:text="Order History"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/wishlist_option"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Tracking"
+        android:id="@+id/ordertracking"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/orderhistory"/>
+
+
+
+
+
+</RelativeLayout>

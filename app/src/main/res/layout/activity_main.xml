@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pooja.myapp.MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/client_logo"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_client_logo"/>
+
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already A Member"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:padding="10dp"
+            android:id="@+id/button_signin"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="SignIn"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorButtonText"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/button_signup"
+            android:onClick="SignUp"
+            android:layout_weight="0.5"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorButtonText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:onClick="ContinueToHome"
+            android:id="@+id/button_continue"
+            android:layout_weight="0.5"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorButtonText"/>
+    </LinearLayout>
+</LinearLayout>

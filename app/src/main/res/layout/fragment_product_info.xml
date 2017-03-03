@@ -1,0 +1,13 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pooja.myapp.ProductInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Product info- Lorem ipsum dolor sit amet, ut sed arcu vel, ipsum sapien et dui molestie, aliquam dictum ornare pellentesque aute leo vitae, pellentesque in pellentesque enim. Id eu arcu vestibulum habitant suspendisse magnis, ut mauris justo turpis a sagittis, faucibus nec mauris augue metus, adipiscing sit autem mauris leo, aenean eget metus. Quisque venenatis suspendisse, quis volutpat vitae suspendisse, et turpis wisi lectus non, vestibulum urna consectetuer vivamus nunc. Sed facilisis scelerisque nam vivamus diam arcu, donec nulla. Rutrum rutrum sagittis, tincidunt sed mi nullam blandit commodo sit, dolor ornare est. Feugiat dolor erat amet, ligula orci dictum phasellus quia, sem vivamus praesent, molestie non ridiculus elit condimentum. Scelerisque magna cursus imperdiet scelerisque pede non, sit pellentesque pharetra felis pede nisl praesentium, arcu nunc vestibulum integer accumsan saepe, dui aliquam auctor interdum pede, in consequatur pede. Imperdiet donec imperdiet eros eu, mi est sit arcu amet, eleifend mattis montes nec ac, tellus a mauris pharetra facilisi lorem aliquam." />
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductListActivity">
+    <include
+        layout="@layout/action_bar_child_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/action_bar_theme"
+        android:id="@+id/sortfilter">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showSortOptions"
+            android:id="@+id/sort"
+            android:text="sort"
+            android:layout_weight="0.5"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showFilterOptions"
+            android:id="@+id/filter"
+            android:text="Filter"
+            android:layout_weight="0.5"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/sortfilter"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@color/colorBackground"
+        />
+
+</RelativeLayout>

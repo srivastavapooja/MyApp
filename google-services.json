@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1041560715325",
+    "firebase_url": "https://myapp-86d84.firebaseio.com",
+    "project_id": "myapp-86d84",
+    "storage_bucket": "myapp-86d84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041560715325:android:e8a6d2696c29c6ab",
+        "android_client_info": {
+          "package_name": "com.pooja.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041560715325-2sdi5ahcd6ok3uqbrnknssdpjfair1nf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk8kbCWxQ07UfevTO4OkmnVz0DVFidOfw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
